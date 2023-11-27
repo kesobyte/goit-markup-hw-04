@@ -1,0 +1,347 @@
+/* CSS Resets */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS Variables */
+
+:root {
+  --slate: #434455;
+  --iris: #4d5ae5;
+  --white: #ffffff;
+  --navy-blue: #2e2f42;
+  --ocean: #404bbf;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+}
+
+/* INDEX PAGE */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--slate);
+  background-color: var(--white);
+}
+
+/* HEADER */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.header {
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav,
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  margin-right: 76px;
+}
+
+/* Navigation Items */
+
+.link {
+  text-decoration: none;
+  padding: 24px 0;
+}
+
+.header-logo {
+  color: var(--navy-blue);
+}
+
+.list {
+  list-style: none;
+}
+
+.nav > .list {
+  display: flex;
+  gap: 40px;
+}
+
+.list-item > .item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+li > .link:hover,
+li > .link:focus {
+  color: var(--ocean);
+}
+
+/* Address */
+
+.contacts {
+  font-style: normal;
+}
+
+.contact-item > .contact {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.contacts > .list {
+  display: flex;
+  gap: 40px;
+}
+
+/* MAIN */
+
+/* First Section */
+
+.first-section {
+  background-color: var(--navy-blue);
+  padding: 188px 0;
+}
+
+.main-header {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  max-width: 496px;
+  margin: 0 auto 48px;
+}
+
+.button {
+  background-color: var(--iris);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--ocean);
+}
+
+/* Second Section */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.list-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.second-section {
+  padding: 120px 0;
+}
+
+.info.list {
+  display: flex;
+  gap: 24px;
+}
+
+.info-card {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+/* Third Section */
+
+.header-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+  margin-bottom: 72px;
+}
+
+.third-section {
+  padding-bottom: 120px;
+}
+
+.service.list {
+  display: flex;
+  gap: 24px;
+}
+
+.service-info {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+/* Fourth Section */
+
+.fourth-section {
+  background-color: var(--cloud);
+  padding: 120px 0;
+}
+
+.team.list {
+  display: flex;
+  gap: 24px;
+}
+
+/* Reused third section header from main */
+
+.team-member {
+  background-color: var(--white);
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+}
+
+.member-info {
+  padding: 32px 0;
+}
+
+.list-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.list-text {
+  text-align: center;
+}
+
+/* Reused item header from main  */
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--navy-blue);
+  padding: 100px 0;
+}
+
+.footer-logo {
+  color: var(--cloud);
+}
+
+.footer-text {
+  line-height: 1.5;
+  color: var(--cloud);
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+
+.footer .link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+/* FORTFOLIO PAGE */
+
+/* Main */
+
+/* Buttons */
+
+.services-section {
+  padding: 96px 0 120px 0;
+}
+
+.btn-menu {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris);
+  background-color: var(--cloud);
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+}
+
+.btn.list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.btn-menu:hover,
+.btn-menu:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+  border: 1px solid transparent;
+}
+
+/* Reused item header from main  */
+
+/* Converting all images to block element */
+
+img {
+  display: block;
+}
+
+/* Services List */
+
+.svc.list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.svc-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.svc-info {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
