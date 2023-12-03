@@ -129,7 +129,6 @@ li > .link:focus {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-img.jpg);
-  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -295,11 +294,15 @@ li > .link:focus {
   display: flex;
   justify-content: center;
   gap: 24px;
+  /* Not part of H4 instructions */
+  margin-top: 8px;
 }
 
 .socmed-items {
   width: 40px;
   height: 40px;
+  /* Not part of H4 instructions */
+  list-style: none;
 }
 
 .socmed-link {
