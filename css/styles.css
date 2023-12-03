@@ -139,7 +139,7 @@ li > .link:focus {
   background-position: center;
   background-size: cover;
   /* Need to add? */
-  max-width: 1440px;
+  /* max-width: 1440px; */
 }
 
 .main-header {
