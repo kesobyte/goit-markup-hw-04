@@ -15,6 +15,8 @@
   --ocean: #404bbf;
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
+  --light-slate: #8e8f99;
+  --green: #31d0aa;
 }
 
 /* INDEX PAGE */
@@ -46,6 +48,7 @@ body {
 
 .top-header {
   display: flex;
+  /* Not from HW3 Instructions */
   justify-content: space-between;
 }
 
@@ -69,7 +72,6 @@ body {
 
 .link {
   text-decoration: none;
-  padding: 24px 0;
 }
 
 .header-logo {
@@ -91,6 +93,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+}
+
+.list.menu {
+  padding: 24px 0;
 }
 
 li > .link:hover,
@@ -303,8 +309,6 @@ li > .link:focus {
 .socmed-items {
   width: 40px;
   height: 40px;
-  /* Not part of H4 instructions */
-  list-style: none;
 }
 
 .socmed-link {
@@ -324,6 +328,44 @@ li > .link:focus {
 
 .socmed-icon {
   fill: var(--cloud);
+}
+
+/* HW4 */
+/* Fifth Section */
+
+.fifth-section {
+  padding: 120px 0;
+}
+
+.customer {
+  display: flex;
+  gap: 24px;
+}
+
+.customer-list {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
+.customer-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-slate);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border-color: var(--ocean);
+  color: var(--ocean);
+}
+
+.customer-icon {
+  fill: currentColor;
 }
 
 /* FOOTER */
@@ -347,6 +389,54 @@ li > .link:focus {
 .footer .link {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+/* HW4 */
+
+.footer > .container {
+  display: flex;
+}
+
+.wrapper {
+  margin-right: 120px;
+}
+
+.footer-socmed-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-socmed {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-socmed-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-socmed-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socmed-link:hover,
+.footer-socmed-link:hover {
+  background-color: var(--green);
+}
+
+.footer-socmed-svg {
+  fill: var(--cloud);
 }
 
 /* FORTFOLIO PAGE */
@@ -385,6 +475,9 @@ li > .link:focus {
   color: var(--white);
   background-color: var(--ocean);
   border: 1px solid transparent;
+  /* HW4 */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Reused item header from main  */
@@ -412,4 +505,15 @@ img {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
   border-top: none;
+}
+
+/* HW4 */
+.svc.link {
+  display: block;
+}
+
+.svc.link:hover,
+.svc.link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
