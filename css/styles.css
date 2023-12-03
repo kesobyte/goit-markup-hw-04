@@ -395,6 +395,7 @@ li > .link:focus {
 
 .footer > .container {
   display: flex;
+  align-items: baseline;
 }
 
 .wrapper {
@@ -431,7 +432,7 @@ li > .link:focus {
 }
 
 .footer-socmed-link:hover,
-.footer-socmed-link:hover {
+.footer-socmed-link:focus {
   background-color: var(--green);
 }
 
