@@ -126,7 +126,7 @@ li > .link:focus {
 
 /* First Section */
 
-.first-section {
+.hero-section {
   background-color: var(--navy-blue);
   padding: 188px 0;
   /* HW4 */
@@ -135,11 +135,10 @@ li > .link:focus {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
   background-size: cover;
-  /* Need to add? */
-  /* max-width: 1440px; */
+  max-width: 1440px, 1440px;
 }
 
 .main-header {
